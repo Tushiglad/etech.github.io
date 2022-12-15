@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main style */
+html , body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+p.one {
+    text-align:center;
+    font-weight: bold;
+    font-size: 30px;
+}
+a.two {
+    text-decoration: none;
+}
+a.one {
+    color: #333;
+    text-decoration: none;
+
+}
+h1.one {
+    font-weight: bold;
+    color: #333;
+    font-size: 60px;
+}
+h1 , h2 , h3 {
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0px;
+
+}
+/* utility class */
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.primary{
+    color:#f7c00a;
+    font-weight: bold;
+    font-size: 60px;
+}
+.lead{
+    font-size:20px;
+    color:#333;
+}
+.btn{
+    display:inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover{
+    background:#f7c00a ;
+    color: #333;
+}
+.btn-light{
+    background:#ffff;
+    color:#333;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+.bg-light{
+ background-color: #fff;
+ color: #333;
+}
+.bg-primary{
+ background: #f7c08a;
+ color: #333;
+}
+.clr{
+    clear: both;
+}
+.py{
+padding: 10px 0;}
+.py2{ padding: 20px 0;}
+.py3 {padding: 30px 0;}
+.lheading{
+    font-size:40px;
+    line-height: 1.2;
+}
+/* menu style*/
+#navbar{
+    background: #333;
+    color: #fff;
+    overflow: auto;
+}
+#navbar a{
+    color:#fff;
+}
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+}
+#navbar ul li a:hover{
+    background:#444;
+    color: #f7c00a;
+}
+#navbar ul li a:hover , #navbar ul li a.current{
+    text-decoration: none;
+    background:#444;
+    color: #f7c00a;
+    text-decoration-color: aqua;
+}
+/* showcase style */
+#showcase{
+    background: url(../img/20200701_04showcase.jpg)no-repeat  center center/cover;
+    height: 600px;
+}
+#showcase .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase  .showcase-content h1 {
+    font-size: 1.7em;
+}
+#showcase .showcase-content p {
+padding-bottom: 20px;
+line-height: 1.7em;
+}
+/* info */
+#hotel-info{
+    height: 450px;
+}
+#hotel-info .image{
+    float: left;
+    width: 50%;
+    background-image: url('../img/20200701_02photo-1.jpg');
+    min-height: 100%;
+}
+#hotel-info .info-text{
+    float:right;
+    width: 50%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#hotel-info .info-text p{
+    padding-bottom: 30px;
+}
+/* features */
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+.box i {
+    padding-top:15px;
+}
+/* About */
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    
+}
+#about-info .info-left{
+   
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+#about-info .info-right img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+#main-footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 7px;
+
+}
+/* Review */
+#review {
+    height: 100%;
+    background: url(../img/20200701_04test-bg.jpg)no-repeat center center/cover;
+}
+#review .comment{
+    padding: 20px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+#review h2{
+    color: #fFF;
+    text-align: center;
+    padding-bottom:40px ;
+}
+#review .comment img{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+/* contact */
+#contact-form .form-group{
+    margin-bottom:20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}#contact-form input, #contact-form textarea{
+    width: 50%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}#contact-form input:focus, #contact-form textarea:focus{
+    outline: none;
+    border: #f7c08a;
+}
+
+
+
+#contact-form textarea {
+    height: 200px;
+}
