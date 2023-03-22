@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <script src="https://kit.fontawesome.com/a187b5212b.js" crossorigin="anonymous"></script>
+    <title>E-Tech</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container2">
+            <h1 class="logo2"><a class="one" href="index.html">E-Tech</a></h1>
+            <ul>
+                <li><a  class="one" href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li class="dropdown">
+                  <a class="dropbtn">Menu</a>
+                  <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="tutorial.html">Tutorial</a>
+                  </div>
+                </li>
+              </ul>
+        </div>
+            </nav>
+            </header>
+            <div class="container">
+                <form>
+                    <input type="email" id="mail" name="username" placeholder="Enter email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="pass" name="password" placeholder="Enter password" onkeypress="handleKeyPress(event)">
+                    <button type="button" id="btn" onclick="login()">Login</button>
+                </form>
+            </div>
+        
+            <footer id="main-footer">
+                <p>E-Tech &copy;2022 All rights reserved</p>
+            </footer>
+        
+            <script>
+                let mail = document.getElementById("mail");
+                let pass = document.getElementById("pass");
+                function login() {
+                    if (mail.value == "duujig@gmail.com" && pass.value=="123456") {
+                        location.href = "index.html";
+                    } else {
+                        alert("Wrong Password or GMAIL");
+                    }
+                }
+                function handleKeyPress(event) {
+                    if (event.keyCode === 13) {
+                        event.preventDefault();
+                        login();
+                    }
+                }
+            </script>
+            </script>
